@@ -84,8 +84,7 @@ p {
 .footer .link:hover,
 .footer .link:focus,
 .header .link.contacts:focus,
-.header .link.contacts:hover,
-.filtres .filtres-link:hover {
+.header .link.contacts:hover {
   color: var(--accient-color);
   fill: var(--accient-color);
 }
@@ -474,8 +473,12 @@ p {
   gap: 30px;
 }
 
-.filter-list .item:hover,
-.filter-list .item:focus {
+.item .filtres-link {
+  display: inline-block;
+}
+
+.item .filtres-link:hover,
+.item .filtres-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -488,7 +491,7 @@ p {
   padding: 20px 24px;
 }
 
-.filtres-link {
+.filtres-img {
   display: block;
   margin: 0;
   padding: 0;
