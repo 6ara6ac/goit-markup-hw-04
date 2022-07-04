@@ -16,6 +16,10 @@ body {
   font-size: 14px;
 }
 
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -143,7 +147,7 @@ p {
 
 .hero {
   padding: 200px 0;
-  height: 600px;
+  margin: 0 auto;
   max-width: 1600px;
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/Img-17.jpg');
@@ -252,6 +256,10 @@ p {
   background-color: #f5f4fa;
 }
 
+.team-wrapper {
+  padding: 30px 0;
+}
+
 .team-list {
   display: flex;
   gap: 30px;
@@ -278,7 +286,6 @@ p {
 
 .team .team-subtitle {
   margin-bottom: 10px;
-  margin-top: 30px;
 
   text-align: center;
   font-size: 16px;
@@ -308,13 +315,14 @@ p {
   height: 44px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   border-radius: 50%;
   fill: var(--icons-color);
 }
 
 .icon-list:hover,
-.icon-list.footer:hover {
+.icon-link:hover,
+.icon-list:focus,
+.icon-link:focus {
   background-color: var(--accient-color);
   fill: #fff;
 }
@@ -407,6 +415,15 @@ p {
   letter-spacing: 0.03em;
 }
 
+.icon-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Filtres */
 .visually-hidden {
   position: absolute;
@@ -440,6 +457,8 @@ p {
 .button-filtres:focus {
   background-color: var(--accient-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-item {
@@ -455,7 +474,8 @@ p {
   gap: 30px;
 }
 
-.filter-list .item:hover {
+.filter-list .item:hover,
+.filter-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
